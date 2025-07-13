@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Lyrion - AI Assistant Android</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 60px 0;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        .info-section {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .download-section {
+            text-align: center;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .requirements {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .req-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .req-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .req-list li:before {
+            content: ' ';
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .warning {
+            background: rgba(255, 193, 7, 0.2);
+            border: 2px solid #FFC107;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <header>
+            <div class='logo'> LYRION</div>
+            <div class='subtitle'>Asistente de IA Local para Android</div>
+            <p>Ejecuta modelos de lenguaje localmente en tu dispositivo Android</p>
+        </header>
+        
+        <div class='main-content'>
+            <div class='info-section'>
+                <h2> Características Principales</h2>
+                <ul style='list-style: none; padding: 20px 0;'>
+                    <li> Inferencia local con llama.cpp</li>
+                    <li> Optimizado para Android 15+</li>
+                    <li> Totalmente privado y sin conexión</li>
+                    <li> Rendimiento optimizado</li>
+                    <li> Interfaz moderna con Jetpack Compose</li>
+                </ul>
+            </div>
+            
+            <div class='download-section'>
+                <h2> Descargar Aplicación</h2>
+                <p style='margin: 20px 0;'>Descarga la última versión desde GitHub Releases</p>
+                <a href='https://github.com/kmz44/Lyrion/releases/latest' class='download-btn'>
+                     Descargar APK
+                </a>
+                <p style='margin-top: 20px; font-size: 0.9rem; opacity: 0.8;'>
+                    Versión actual: Compatible con Android 15+
+                </p>
+            </div>
+        </div>
+        
+        <div class='features'>
+            <div class='feature-card'>
+                <div class='feature-icon'></div>
+                <h3>IA Local</h3>
+                <p>Ejecuta modelos de IA directamente en tu dispositivo sin necesidad de internet</p>
+            </div>
+            
+            <div class='feature-card'>
+                <div class='feature-icon'></div>
+                <h3>Privacidad Total</h3>
+                <p>Tus conversaciones nunca salen de tu dispositivo. Privacidad garantizada</p>
+            </div>
+            
+            <div class='feature-card'>
+                <div class='feature-icon'></div>
+                <h3>Alto Rendimiento</h3>
+                <p>Optimizado con llama.cpp para máximo rendimiento en dispositivos móviles</p>
+            </div>
+        </div>
+        
+        <div class='requirements'>
+            <h2> Requisitos del Sistema</h2>
+            <ul class='req-list'>
+                <li>Android 15+ (API 35)</li>
+                <li>4GB de RAM mínimo (8GB recomendado)</li>
+                <li>2GB de almacenamiento libre</li>
+                <li>ARMv8 (64-bit) o superior</li>
+                <li>Fuentes desconocidas habilitadas</li>
+            </ul>
+        </div>
+        
+        <div class='warning'>
+            <h3> Instalación desde Fuentes Desconocidas</h3>
+            <p>Esta aplicación se instala como APK. Asegúrate de habilitar 'Fuentes desconocidas' en Configuración > Seguridad > Instalar aplicaciones desconocidas.</p>
+        </div>
+        
+        <div class='footer'>
+            <h3> Enlaces Útiles</h3>
+            <p>
+                <a href='https://github.com/kmz44/Lyrion' style='color: #FFD700; text-decoration: none;'> Código Fuente</a> | 
+                <a href='https://github.com/kmz44/Lyrion/issues' style='color: #FFD700; text-decoration: none;'> Reportar Bug</a> | 
+                <a href='https://github.com/kmz44/Lyrion/blob/main/README.md' style='color: #FFD700; text-decoration: none;'> Documentación</a>
+            </p>
+            <p style='margin-top: 20px; opacity: 0.7;'>
+                Desarrollado con  | Powered by llama.cpp
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Detección de dispositivo Android
+        function isAndroid() {
+            return /Android/i.test(navigator.userAgent);
+        }
+        
+        // Mostrar mensaje personalizado para usuarios Android
+        if (isAndroid()) {
+            const downloadBtn = document.querySelector('.download-btn');
+            downloadBtn.innerHTML = ' Descargar para tu Android';
+            downloadBtn.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+        }
+        
+        // Animación de entrada
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.feature-card, .info-section, .download-section');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    el.style.transition = 'all 0.6s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

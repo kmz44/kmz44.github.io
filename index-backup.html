@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylos.css">
+    <title>Curso Interactivo de HTML</title>
+    
+</head>
+<body>
+
+<header>
+    <h1>Curso Completo e Interactivo de HTML</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#que-es-html">¿Qué es HTML?</a></li>
+        <li><a href="#estructura-basica">Estructura Básica</a></li>
+        <li><a href="#formato-texto">Formato de Texto</a></li>
+        <li><a href="#imagenes">Imágenes</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#formularios">Formularios</a></li>
+        <li><a href="#div-span">Divs y Spans</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#seo">Accesibilidad y SEO</a></li>
+    </ul>
+</nav>
+
+<section id="que-es-html">
+    <h2>1. ¿Qué es HTML?</h2>
+    <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Su función es estructurar el contenido de la web utilizando <strong>etiquetas</strong>.</p>
+
+    <div class="ejemplo">
+        <p>HTML se compone de etiquetas que representan diferentes tipos de contenido, como texto, imágenes y enlaces.</p>
+    </div>
+
+    <h3>Ejercicio 1: ¿Qué has aprendido?</h3>
+    <p>¿Cuál es el propósito de HTML? Escribe tu respuesta aquí:</p>
+    <textarea id="codigo-ejercicio-1" placeholder="Escribe aquí tu respuesta..."></textarea>
+    <button onclick="mostrarRespuesta(1)">Ver respuesta</button>
+    <div id="respuesta-1" class="resultado"></div>
+</section>
+
+<section id="estructura-basica">
+    <h2>2. Estructura Básica de un Documento HTML</h2>
+    <p>La estructura básica de un documento HTML incluye las etiquetas necesarias para definir el contenido de una página web.</p>
+
+    <h3>Ejemplo de Estructura Básica</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi primera página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bienvenido a mi página&lt;/h1&gt;
+    &lt;p&gt;Este es un ejemplo de un párrafo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 2: Crea tu propia estructura HTML</h3>
+    <p>Escribe el código de la estructura básica de un documento HTML en el área de texto a continuación:</p>
+    <textarea id="codigo-ejercicio-2" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(2)">Ver resultado</button>
+    <div id="resultado-2" class="resultado"></div>
+    <iframe id="preview-2"></iframe>
+</section>
+
+<section id="formato-texto">
+    <h2>3. Formato de Texto</h2>
+    <p>En HTML, puedes dar formato al texto utilizando diferentes etiquetas:</p>
+    <ul>
+        <li><strong>&lt;h1&gt;...&lt;/h1&gt;</strong> a <strong>&lt;h6&gt;...&lt;/h6&gt;</strong> para títulos de diferentes tamaños.</li>
+        <li><strong>&lt;p&gt;...&lt;/p&gt;</strong> para párrafos.</li>
+        <li><strong>&lt;b&gt;...&lt;/b&gt;</strong> para texto en negrita.</li>
+        <li><strong>&lt;i&gt;...&lt;/i&gt;</strong> para texto en cursiva.</li>
+    </ul>
+
+    <h3>Ejemplo de Formato de Texto</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;h1&gt;Este es un título&lt;/h1&gt;
+&lt;p&gt;Este es un párrafo de texto.&lt;/p&gt;
+&lt;b&gt;Este texto está en negrita.&lt;/b&gt;
+&lt;i&gt;Este texto está en cursiva.&lt;/i&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 3: Formatea el texto</h3>
+    <p>Escribe el código para formatear texto usando diferentes etiquetas de HTML:</p>
+    <textarea id="codigo-ejercicio-3" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(3)">Ver resultado</button>
+    <div id="resultado-3" class="resultado"></div>
+    <iframe id="preview-3"></iframe>
+</section>
+
+<section id="imagenes">
+    <h2>4. Imágenes en HTML</h2>
+    <p>Para agregar imágenes en HTML, utilizamos la etiqueta <strong>&lt;img&gt;</strong>. Esta etiqueta es auto-cerrada y requiere al menos el atributo <strong>src</strong> para especificar la ubicación de la imagen.</p>
+
+    <h3>Ejemplo de una Imagen</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+    </div>
+    <div class="img-placeholder">[Espacio para insertar imagen]</div>
+
+    <h3>Ejercicio 4: Inserta una imagen</h3>
+    <p>Escribe el código para insertar una imagen:</p>
+    <textarea id="codigo-ejercicio-4" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(4)">Ver resultado</button>
+    <div id="resultado-4" class="resultado"></div>
+    <iframe id="preview-4"></iframe>
+</section>
+
+<section id="enlaces">
+    <h2>5. Enlaces en HTML</h2>
+    <p>Los enlaces se crean con la etiqueta <strong>&lt;a&gt;</strong>. Esta etiqueta también requiere el atributo <strong>href</strong> para especificar la dirección a la que apunta el enlace.</p>
+
+    <h3>Ejemplo de un Enlace</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt;/a&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 5: Crea un enlace</h3>
+    <p>Escribe el código para crear un enlace:</p>
+    <textarea id="codigo-ejercicio-5" placeholder="Escribe tu código aquí..."></textarea></textarea>
+    <button onclick="verResultado(5)">Ver resultado</button>
+    <div id="resultado-5" class="resultado"></div>
+    <iframe id="preview-5"></iframe>
+</section>
+
+<section id="listas">
+    <h2>6. Listas en HTML</h2>
+    <p>Existen dos tipos de listas en HTML: listas ordenadas (<strong>&lt;ol&gt;</strong>) y listas desordenadas (<strong>&lt;ul&gt;</strong>).</p>
+
+    <h3>Ejemplo de Listas</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 6: Crea una lista</h3>
+    <p>Escribe el código para crear una lista:</p>
+    <textarea id="codigo-ejercicio-6" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(6)">Ver resultado</button>
+    <div id="resultado-6" class="resultado"></div>
+    <iframe id="preview-6"></iframe>
+</section>
+
+<section id="tablas">
+    <h2>7. Tablas en HTML</h2>
+    <p>Las tablas se crean con la etiqueta <strong>&lt;table&gt;</strong> y se estructuran usando <strong>&lt;tr&gt;</strong> para las filas y <strong>&lt;td&gt;</strong> para las celdas.</p>
+
+    <h3>Ejemplo de una Tabla</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Celda 1&lt;/td&gt;
+    &lt;td&gt;Celda 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 7: Crea una tabla</h3>
+    <p>Escribe el código para crear una tabla:</p>
+    <textarea id="codigo-ejercicio-7" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(7)">Ver resultado</button>
+    <div id="resultado-7" class="resultado"></div>
+    <iframe id="preview-7"></iframe>
+</section>
+
+<section id="formularios">
+    <h2>8. Formularios en HTML</h2>
+    <p>Los formularios se crean utilizando la etiqueta <strong>&lt;form&gt;</strong> y contienen diversos elementos como <strong>&lt;input&gt;</strong>, <strong>&lt;textarea&gt;</strong> y <strong>&lt;select&gt;</strong>.</p>
+
+    <h3>Ejemplo de un Formulario</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;form&gt;
+  &lt;label&gt;Nombre:&lt;/label&gt;
+  &lt;input type="text" name="nombre"&gt;
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 8: Crea un formulario</h3>
+    <p>Escribe el código para crear un formulario:</p>
+    <textarea id="codigo-ejercicio-8" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(8)">Ver resultado</button>
+    <div id="resultado-8" class="resultado"></div>
+    <iframe id="preview-8"></iframe>
+</section>
+
+<section id="div-span">
+    <h2>9. Divs y Spans</h2>
+    <p>Los elementos <strong>&lt;div&gt;</strong> y <strong>&lt;span&gt;</strong> son usados para agrupar contenido. <strong>&lt;div&gt;</strong> es un elemento de bloque, mientras que <strong>&lt;span&gt;</strong> es un elemento en línea.</p>
+
+    <h3>Ejemplo de Div y Span</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;div&gt;
+  &lt;p&gt;Este es un párrafo dentro de un div.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;span&gt;Este es un texto en línea.&lt;/span&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 9: Usa divs y spans</h3>
+    <p>Escribe el código para usar un div y un span:</p>
+    <textarea id="codigo-ejercicio-9" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(9)">Ver resultado</button>
+    <div id="resultado-9" class="resultado"></div>
+    <iframe id="preview-9"></iframe>
+</section>
+
+<section id="multimedia">
+    <h2>10. Multimedia en HTML</h2>
+    <p>HTML permite incluir elementos multimedia como videos y audio. Utilizamos la etiqueta <strong>&lt;video&gt;</strong> para videos y <strong>&lt;audio&gt;</strong> para audio.</p>
+
+    <h3>Ejemplo de Multimedia</h3>
+    <div class="ejemplo">
+        <pre><code>&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Tu navegador no soporta videos.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mp3"&gt;
+  Tu navegador no soporta audio.
+&lt;/audio&gt;</code></pre>
+    </div>
+
+    <h3>Ejercicio 10: Agrega multimedia</h3>
+    <p>Escribe el código para agregar un video o audio:</p>
+    <textarea id="codigo-ejercicio-10" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(10)">Ver resultado</button>
+    <div id="resultado-10" class="resultado"></div>
+    <iframe id="preview-10"></iframe>
+</section>
+
+<section id="seo">
+    <h2>11. cómo hacer tablas </h2>
+    <p>
+        
+        Aquí estará el código HTML de cómo hacer una tabla con &lt;table&gt;&lt;/table&gt;:
+        <br>
+        <code>
+            &lt;table border="1"&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nombre&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Edad&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Ciudad&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Ana&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Nueva York&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Juan&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Los Ángeles&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;28&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Chicago&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </code>
+    </p>
+
+    <h3>Ejercicio 11: Mejora la accesibilidad</h3>
+    <p>Escribe un fragmento de código que considere la accesibilidad:</p>
+    <textarea id="codigo-ejercicio-11" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(11)">Ver resultado</button>
+    <div id="resultado-11" class="resultado"></div>
+    <iframe id="preview-11"></iframe>
+
+
+</section>
+
+<footer>
+    <p>cosas que casi no se utilisan en html sin css y js </p>
+</footer>
+
+   
+
+
+
+
+    <h2>3. Formato de Texto</h2>
+    <p>Aquí algunos ejemplos de formato de texto:</p>
+    <ul>
+        <li>&lt;b&gt;Negrita&lt;/b&gt;</li>
+        <li>&lt;i&gt;Cursiva&lt;/i&gt;</li>
+        <li>&lt;u&gt;Subrayado&lt;/u&gt;</li>
+        <li>&lt;strong&gt;Fuerte&lt;/strong&gt;</li>
+        <li>&lt;em&gt;Énfasis&lt;/em&gt;</li>
+        <li>&lt;small&gt;Texto pequeño&lt;/small&gt;</li>
+        <li>&lt;mark&gt;Texto resaltado&lt;/mark&gt;</li>
+        <li>&lt;del&gt;Texto eliminado&lt;/del&gt;</li>
+        <li>&lt;ins&gt;Texto insertado&lt;/ins&gt;</li>
+        <li>&lt;sub&gt;Subíndice&lt;/sub&gt;</li>
+        <li>&lt;sup&gt;Superíndice&lt;/sup&gt;</li>
+    </ul>
+
+
+    <h2>10. Secciones y Artículos</h2>
+    <section>
+        <h3>Sección de Ejemplo</h3>
+        <p>Esta es una sección que muestra el uso de la etiqueta &lt;section&gt;.</p>
+    </section>
+
+    <article>
+        <h3>Artículo de Ejemplo</h3>
+        <p>Este es un artículo que utiliza la etiqueta &lt;article&gt; para marcar contenido independiente.</p>
+    </article>
+    <div class="ejemplo">
+        <pre><code>  <img src="public/img/artic.jpg" alt="Texto alternativo"></code></pre>
+    </div>
+
+    <h3>Ejercicio 8: Crea un articulo</h3>
+    <p>Escribe el código para crear un articulo:</p>
+    <textarea id="codigo-ejercicio-8" placeholder="Escribe tu código aquí..."></textarea>
+    <button onclick="verResultado(8)">Ver resultado</button>
+    <div id="resultado-8" class="resultado"></div>
+    <iframe id="preview-8"></iframe>
+</section>
+
+
+
+
+    <h2>13. Elementos Menos Comunes</h2>
+    <img src="public/img/ocultar.jpg"alt="ocultar cosas">
+    <details>
+        <summary>Detalles adicionales</summary>
+        <p>Este es un contenido adicional que se puede mostrar u ocultar.</p>
+    </details>
+    <img src="public/img/progreso.jpg" alt="mostrar un progreso en html sin css ni js">
+    <progress value="70" max="100">70%</progress>
+    <br>
+    <meter value="0.6">60%</meter>
+
+
+   
+    
+
+
+
+
+
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre (mínimo 3 letras):</label>
+        <input type="text" id="nombre" name="nombre" minlength="3" aria-label="Ingrese su nombre" required><br><br>
+
+        <label for="email">Email (debe contener @):</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Seleccione un país</option>
+            <option value="espana">España</option>
+            <option value="mexico">México</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+<body>
+    <section id="enlaces">
+        <h2>cómo hacer un formulario mas sofisticado necesidad de una base de datos </h2>
+        <p>
+            Para crear un formulario en HTML, utilizamos la etiqueta &lt;form&gt;. Dentro de esta etiqueta, podemos incluir diferentes elementos para capturar la información del usuario. 
+            A continuación, se muestra un ejemplo básico:
+          
+            Este código incluye varios elementos:
+            <ul>
+                <li>&lt;form&gt;: Define el inicio de un formulario. El atributo <strong>action</strong> especifica la URL a la que se enviarán los datos, y <strong>method</strong> indica el método de envío (generalmente "post").</li>
+                <li>&lt;label&gt;: Crea una etiqueta para cada campo, mejorando la accesibilidad. El atributo <strong>for</strong> asocia la etiqueta con el campo correspondiente.</li>
+                <li>&lt;input&gt;: Define un campo donde el usuario puede ingresar información. El tipo de entrada se especifica mediante el atributo <strong>type</strong>, como "text" para texto, "email" para correos, y "number" para números.</li>
+                <li>&lt;select&gt;: Crea un menú desplegable para que el usuario elija una opción. Contiene varias etiquetas &lt;option&gt; que representan las opciones disponibles.</li>
+                <li>&lt;input type=&quot;submit&quot;&gt;: Crea un botón que el usuario puede presionar para enviar el formulario.</li>
+            </ul>
+            Los atributos como <strong>required</strong> indican que el campo es obligatorio, y <strong>minlength</strong> asegura que el texto ingresado tenga al menos una longitud mínima.
+        </p>
+        <h3>Ejemplo de un Enlace</h3>
+        <div class="ejemplo">
+            <pre>     <code>
+                &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;<br>
+                &nbsp;&nbsp;&lt;label for=&quot;nombre&quot;&gt;Nombre (mínimo 3 letras):&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type=&quot;text&quot; id=&quot;nombre&quot; name=&quot;nombre&quot; minlength=&quot;3&quot; required&gt;&lt;br&gt;&lt;br&gt;<br>
+                &nbsp;&nbsp;&lt;label for=&quot;email&quot;&gt;Email (debe contener @):&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;&lt;br&gt;&lt;br&gt;<br>
+                &nbsp;&nbsp;&lt;label for=&quot;edad&quot;&gt;Edad:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;input type=&quot;number&quot; id=&quot;edad&quot; name=&quot;edad&quot; required&gt;&lt;br&gt;&lt;br&gt;<br>
+                &nbsp;&nbsp;&lt;label for=&quot;pais&quot;&gt;País:&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;select id=&quot;pais&quot; name=&quot;pais&quot; required&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;&quot;&gt;Seleccione un país&lt;/option&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;espana&quot;&gt;España&lt;/option&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;mexico&quot;&gt;México&lt;/option&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;argentina&quot;&gt;Argentina&lt;/option&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;colombia&quot;&gt;Colombia&lt;/option&gt;<br>
+                &nbsp;&nbsp;&lt;/select&gt;&lt;br&gt;&lt;br&gt;<br>
+                &nbsp;&nbsp;&lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;<br>
+                &lt;/form&gt;
+            </code></pre>
+        </div>
+    
+        <h3>Ejercicio 5: Crea un formulario mas sofisticado</h3>
+        <p>Escribe el código para crear un formulario mas sofisticado :</p>
+        <textarea id="codigo-ejercicio-5" placeholder="Escribe tu código aquí..."></textarea></textarea>
+        <button onclick="verResultado(5)">Ver resultado</button>
+        <div id="resultado-5" class="resultado"></div>
+        <iframe id="preview-5"></iframe>
+    </section>
+    
+
+   
+
+    <h2>cosas que puedes lograr si aprendes css y js  Elementos de Estilo y Script</h2>
+    
+    <p class="destacado">Este párrafo está destacado usando una clase CSS.</p>
+
+<script src="java.js"></script>
+<a href="xd.html">para ver mas gratis sin anuncios</a>
+</body>
+</html>
