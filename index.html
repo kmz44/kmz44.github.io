@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang='es'>
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>KMZ44 - Desarrollador de Aplicaciones IA</title>
+    <title>KMZ44 - Lyrion AI Assistant</title>
+    <meta name='description' content='Descarga Lyrion, el asistente de IA local para Android'>
     <style>
         * {
             margin: 0;
@@ -16,233 +17,112 @@
             background: linear-gradient(135deg, #2c3e50, #3498db);
             min-height: 100vh;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
         }
         
-        header {
-            text-align: center;
-            padding: 60px 0;
-            margin-bottom: 50px;
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 20px rgba(255,255,255,0.2); }
+            to { text-shadow: 0 0 30px rgba(255,255,255,0.4); }
         }
         
         .title {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-        
-        .project-card {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-10px);
-            border-color: rgba(255,255,255,0.3);
-            background: rgba(255,255,255,0.15);
-        }
-        
-        .project-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .project-title {
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             margin-bottom: 15px;
             color: #FFD700;
         }
         
-        .project-desc {
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        
-        .project-links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.8;
         }
         
         .btn {
-            padding: 12px 24px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
             display: inline-block;
-        }
-        
-        .btn-primary {
             background: linear-gradient(45deg, #ff6b6b, #ee5a24);
             color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
         }
         
         .btn-secondary {
             background: rgba(255,255,255,0.2);
-            color: white;
             border: 2px solid rgba(255,255,255,0.5);
         }
         
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
-        .highlight {
-            border: 3px solid #FFD700;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 30px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 15px;
-        }
-        
-        @media (max-width: 768px) {
-            .title {
-                font-size: 2rem;
-            }
-            
-            .projects {
-                grid-template-columns: 1fr;
-            }
+        .redirect-info {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(46, 204, 113, 0.2);
+            border: 2px solid #2ECC71;
+            border-radius: 10px;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <div class='container'>
-        <header>
-            <div class='title'> KMZ44</div>
-            <div class='subtitle'>Desarrollador de Aplicaciones de Inteligencia Artificial</div>
-        </header>
+        <div class='logo'></div>
+        <h1 class='title'>LYRION</h1>
+        <p class='subtitle'>Asistente de IA Local para Android</p>
         
-        <div class='projects'>
-            <!-- Proyecto destacado: Lyrion -->
-            <div class='project-card highlight'>
-                <div class='project-icon'></div>
-                <h2 class='project-title'>LYRION - AI Assistant</h2>
-                <p class='project-desc'>
-                    Asistente de IA que ejecuta modelos de lenguaje localmente en dispositivos Android. 
-                    Privacidad total, sin conexiÛn a internet necesaria. Optimizado con llama.cpp.
-                </p>
-                <div class='project-links'>
-                    <a href='lyrion.html' class='btn btn-primary'> Ver Proyecto</a>
-                    <a href='https://github.com/kmz44/kmz44.github.io/raw/main/Lyrion-v1.0.6-Android15.apk' class='btn btn-secondary'> Descargar APK</a>
-                </div>
-            </div>
-            
-            <!-- Curso HTML -->
-            <div class='project-card'>
-                <div class='project-icon'></div>
-                <h2 class='project-title'>Curso Interactivo HTML</h2>
-                <p class='project-desc'>
-                    Curso completo e interactivo para aprender HTML desde cero. 
-                    Incluye ejemplos pr·cticos y ejercicios interactivos.
-                </p>
-                <div class='project-links'>
-                    <a href='index-backup.html' class='btn btn-primary'> Ver Curso</a>
-                    <a href='xd.html' class='btn btn-secondary'> Ejemplos</a>
-                </div>
-            </div>
-            
-            <!-- PrÛximos proyectos -->
-            <div class='project-card'>
-                <div class='project-icon'></div>
-                <h2 class='project-title'>PrÛximos Proyectos</h2>
-                <p class='project-desc'>
-                    M·s aplicaciones de IA, herramientas de desarrollo y proyectos 
-                    innovadores en desarrollo.
-                </p>
-                <div class='project-links'>
-                    <a href='https://github.com/kmz44' class='btn btn-secondary'> GitHub</a>
-                </div>
-            </div>
-        </div>
+        <a href='lyrion.html' class='btn'>
+             Ver Proyecto y Descargar
+        </a>
         
-        <div class='footer'>
-            <h3> Contacto y Redes</h3>
-            <p>
-                <a href='https://github.com/kmz44' style='color: #FFD700; text-decoration: none;'>GitHub</a> | 
-                <a href='mailto:kmz44.dev@gmail.com' style='color: #FFD700; text-decoration: none;'>Email</a>
-            </p>
-            <p style='margin-top: 20px; opacity: 0.7;'>
-                Especializado en IA Local y Desarrollo Android
-            </p>
+        <a href='https://github.com/kmz44/kmz44.github.io/raw/main/Lyrion-v1.0.6-Android15.apk' class='btn btn-secondary'>
+             Descarga Directa APK
+        </a>
+        
+        <div class='redirect-info'>
+            <strong> Acceso r√°pido:</strong><br>
+            Esta p√°gina te llevar√° directamente a la informaci√≥n de Lyrion y la descarga de la APK.
         </div>
     </div>
     
     <script>
-        // AnimaciÛn de entrada para las tarjetas
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('.project-card');
-            cards.forEach((card, index) => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(50px)';
-                setTimeout(() => {
-                    card.style.transition = 'all 0.6s ease';
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, index * 200);
-            });
+        // Auto-redirecci√≥n despu√©s de 3 segundos si no hay interacci√≥n
+        let redirectTimer = setTimeout(function() {
+            window.location.href = 'lyrion.html';
+        }, 5000);
+        
+        // Cancelar auto-redirecci√≥n si el usuario interact√∫a
+        document.addEventListener('click', function() {
+            clearTimeout(redirectTimer);
         });
         
-        // Efecto de partÌculas en el fondo (opcional)
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.style.position = 'fixed';
-            particle.style.width = '4px';
-            particle.style.height = '4px';
-            particle.style.backgroundColor = 'rgba(255,255,255,0.5)';
-            particle.style.borderRadius = '50%';
-            particle.style.pointerEvents = 'none';
-            particle.style.left = Math.random() * window.innerWidth + 'px';
-            particle.style.top = '100vh';
-            particle.style.zIndex = '-1';
-            
-            document.body.appendChild(particle);
-            
-            const animation = particle.animate([
-                { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
-                { transform: 'translateY(-100vh) rotate(360deg)', opacity: 0 }
-            ], {
-                duration: Math.random() * 3000 + 2000,
-                easing: 'linear'
-            });
-            
-            animation.onfinish = () => particle.remove();
-        }
-        
-        // Crear partÌculas cada 500ms
-        setInterval(createParticle, 500);
+        document.addEventListener('mousemove', function() {
+            clearTimeout(redirectTimer);
+        });
     </script>
 </body>
 </html>

@@ -1,25 +1,23 @@
-﻿#  Lyrion - AI Assistant Android App
+﻿#  Lyrion - AI Assistant Android
 
 ##  Descarga Directa
-**Última versión:** [Lyrion v1.0.6 para Android 15+](https://github.com/kmz44/kmz44.github.io/raw/main/Lyrion-v1.0.6-Android15.apk)
+**[ Descargar Lyrion v1.0.6 APK](https://github.com/kmz44/kmz44.github.io/raw/main/Lyrion-v1.0.6-Android15.apk)**
 
-###  Información de la APK:
+##  Página Web
+**[ Ver información completa y descargar](https://kmz44.github.io/lyrion.html)**
+
+###  Información del archivo:
 - **Versión:** 1.0.6
-- **Tamaño:** 66.4 MB
+- **Tamaño:** 66.4 MB  
 - **Android mínimo:** Android 15+ (API 35)
 - **Arquitecturas:** ARM64, ARMv7, x86, x86_64
-- **Firmado:** Sí, listo para instalar
+- **Firmado:**  Listo para instalar
 
-###  Instalación:
+###  Instalación rápida:
 1. Descarga el archivo APK
 2. Habilita 'Fuentes desconocidas' en Configuración > Seguridad
 3. Instala la APK
 4. ¡Disfruta de tu asistente IA local!
 
-###  Más información:
-- **Página web:** https://kmz44.github.io/lyrion.html
-- **Documentación:** Incluida en la página web
-- **Soporte:** Issues en este repositorio
-
 ---
-*Desarrollado con  usando llama.cpp*
+*Asistente de IA que funciona completamente offline en tu dispositivo Android*
