@@ -1,128 +1,43 @@
-﻿<!DOCTYPE html>
-<html lang='es'>
+<!doctype html>
+<html lang="es">
+
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>KMZ44 - Lyrion AI Assistant</title>
-    <meta name='description' content='Descarga Lyrion, el asistente de IA local para Android'>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            min-height: 100vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .container {
-            text-align: center;
-            max-width: 600px;
-            padding: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .logo {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-        
-        @keyframes glow {
-            from { text-shadow: 0 0 20px rgba(255,255,255,0.2); }
-            to { text-shadow: 0 0 30px rgba(255,255,255,0.4); }
-        }
-        
-        .title {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: #FFD700;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.8;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            margin: 10px;
-        }
-        
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-        }
-        
-        .btn-secondary {
-            background: rgba(255,255,255,0.2);
-            border: 2px solid rgba(255,255,255,0.5);
-        }
-        
-        .redirect-info {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(46, 204, 113, 0.2);
-            border: 2px solid #2ECC71;
-            border-radius: 10px;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Página Muestra es una demostración de mi trabajo en desarrollo web. Explora este sitio para ver ejemplos de mis habilidades y proyectos." />
+  <title>Página Muestra </title>
+  
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1e40af",
+            "bg-soft": "#f1f5f9",
+            "bg-dark": "#0f172a",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <script type="module" crossorigin src="/assets/index-B9bZT8r-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BzJq2iWt.css">
 </head>
+
 <body>
-    <div class='container'>
-        <div class='logo'></div>
-        <h1 class='title'>LYRION</h1>
-        <p class='subtitle'>Asistente de IA Local para Android</p>
-        
-        <a href='lyrion.html' class='btn'>
-             Ver Proyecto y Descargar
-        </a>
-        
-        <a href='https://github.com/kmz44/kmz44.github.io/raw/main/Lyrion-v1.0.6-Android15.apk' class='btn btn-secondary'>
-             Descarga Directa APK
-        </a>
-        
-        <div class='redirect-info'>
-            <strong> Acceso rápido:</strong><br>
-            Esta página te llevará directamente a la información de Lyrion y la descarga de la APK.
-        </div>
-    </div>
-    
-    <script>
-        // Auto-redirección después de 3 segundos si no hay interacción
-        let redirectTimer = setTimeout(function() {
-            window.location.href = 'lyrion.html';
-        }, 5000);
-        
-        // Cancelar auto-redirección si el usuario interactúa
-        document.addEventListener('click', function() {
-            clearTimeout(redirectTimer);
-        });
-        
-        document.addEventListener('mousemove', function() {
-            clearTimeout(redirectTimer);
-        });
-    </script>
+  <div id="root"></div>
 </body>
+
 </html>
